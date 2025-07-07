@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/musa/Desktop/6Th_Semester/DSD_Labs/lab01
+vNAND_OR
+Z1 !s110 1739985657
+!i10b 1
+!s100 kP9if^3NamI:gb[:6Qfo^3
+I?G=RYacGdRfHEhHAg5bza0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1739985620
+Z4 8C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/lab01/Test_Bench.v
+Z5 FC:/Users/musa/Desktop/6Th_Semester/DSD_Labs/lab01/Test_Bench.v
+L0 41
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1739985657.000000
+Z8 !s107 C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/lab01/Test_Bench.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/lab01/Test_Bench.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@n@a@n@d_@o@r
+vNAND_OR_TB
+R1
+!i10b 1
+!s100 zD9l2l<8IGd2P3@7l60Lc0
+I6VhYm1dd4=XOi`T<2HQgf3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@n@a@n@d_@o@r_@t@b

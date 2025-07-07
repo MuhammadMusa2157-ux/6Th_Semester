@@ -1,0 +1,20 @@
+Running: F:\software\xlinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/LAB03/DsdLab03/full_adder_test_isim_beh.exe -prj C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/LAB03/DsdLab03/full_adder_test_beh.prj work.full_adder_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/LAB03/DsdLab03/fullAdder.v" into library work
+Analyzing Verilog file "C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/LAB03/DsdLab03/testBench.v" into library work
+Analyzing Verilog file "F:/software/xlinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module HA
+Compiling module full_adder
+Compiling module full_adder_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable C:/Users/musa/Desktop/6Th_Semester/DSD_Labs/LAB03/DsdLab03/full_adder_test_isim_beh.exe
+Fuse Memory Usage: 27692 KB
+Fuse CPU Usage: 468 ms

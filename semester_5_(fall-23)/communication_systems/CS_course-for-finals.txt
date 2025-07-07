@@ -1,0 +1,36 @@
+CS COURSE FOR FINALS JAN 2024.
+
+	Chapter 4
+		▪️Amplitude modulation and demodulation 
+		▪️DSB-SC(Complete) 
+		▪️Generation of AM signal
+		▪️QAM
+		▪️SSB
+		▪️Modulating index
+		▪️Generation of SSB
+		selective filtering method
+		phase shift method
+		▪️Envelope detection is SSB
+		▪️Vestigial side band 
+		▪️Carrier acquisition
+		pilot method
+		PLL
+		Squaring method
+
+	Chapter 5
+		▪️Angle Modulation
+		▪️Phase and Frequency modulation
+		▪️Bandwidth of EM wave
+		▪️Narrow band MS
+		▪️Wide band MS
+		▪️Carson theorem 
+	
+	Chapter 6
+		▪️Modulation in digital electronics
+		▪️Pulse code Modulation
+		▪️Sampling theorem
+		▪️Signal reconstruction using interpolation
+		▪️Practical signal representation
+
+	Slides
+		▪️ Till slide 49

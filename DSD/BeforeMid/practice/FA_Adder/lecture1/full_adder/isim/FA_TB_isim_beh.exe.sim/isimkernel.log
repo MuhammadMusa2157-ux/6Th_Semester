@@ -1,0 +1,10 @@
+Command line:
+   FA_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  3
+     -socket  55860
+
+Fri Mar 14 07:00:40 2025
+
+
+ Elaboration Time: 0.078125 sec

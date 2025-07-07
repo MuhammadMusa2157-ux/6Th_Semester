@@ -1,0 +1,2 @@
+verilog work "../../FA_Adder.v"
+verilog work "../../FA_Adder_TB.v"

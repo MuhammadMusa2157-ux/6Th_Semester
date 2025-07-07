@@ -1,0 +1,26 @@
+ISim log file
+Running: C:\Users\musa\Desktop\6Th_Semester\DSD\practice\FA_Adder\lecture1\full_adder\FA_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/musa/Desktop/6Th_Semester/DSD/practice/FA_Adder/lecture1/full_adder/FA_TB_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim3.wdb.
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+A=x, B=x, Cin=x, S=x, Cout=x
+A=0, B=0, Cin=0, S=0, Cout=0
+A=0, B=0, Cin=1, S=1, Cout=0
+A=0, B=1, Cin=0, S=1, Cout=0
+A=0, B=1, Cin=1, S=0, Cout=1
+A=1, B=0, Cin=0, S=1, Cout=0
+A=1, B=0, Cin=1, S=0, Cout=1
+A=1, B=1, Cin=0, S=0, Cout=1
+A=1, B=1, Cin=1, S=1, Cout=1
+Stopped at time : 90 ns : File "C:/Users/musa/Desktop/6Th_Semester/DSD/practice/FA_Adder/FA_Adder_TB.v" Line 17

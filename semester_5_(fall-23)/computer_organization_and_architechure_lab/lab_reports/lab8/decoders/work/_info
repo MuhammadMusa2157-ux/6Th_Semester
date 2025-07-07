@@ -1,0 +1,340 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/multiplexers
+vDecoder3x8
+Z0 !s110 1702835281
+!i10b 1
+!s100 5n1=O@Q>Z5RP_]n?oDVel1
+IWf<C8gVod[fTTHEkK]_<43
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders
+w1702835039
+Z3 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v
+Z4 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1702835281.000000
+Z7 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@decoder3x8
+vDecoder4x16
+!s110 1702835282
+!i10b 1
+!s100 ^?_@HGBgZhD=I35HO4hn73
+IeK1H^n_DU3dFE;b<OIjX00
+R1
+R2
+w1702835147
+Z11 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v
+Z12 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1702835282.000000
+Z13 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v|
+!i113 1
+R9
+R10
+n@decoder4x16
+vDecoder_2x4
+Z15 !s110 1702836263
+!i10b 1
+!s100 lJI1FXg=P9[aG>NlQQM@V3
+I=PmOn;9aSa5D_X=IV1@RK3
+R1
+R2
+w1702834600
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z16 !s108 1702836263.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v|
+!i113 1
+R9
+R10
+n@decoder_2x4
+vDecoder_2x4_tb
+R0
+!i10b 1
+!s100 o`=^?;NkIFkEjeMcnL^_J1
+IgXhTZUTWi`@o>F2gS4e@j0
+R1
+R2
+w1702833788
+Z17 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v
+Z18 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z19 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v|
+!i113 1
+R9
+R10
+n@decoder_2x4_tb
+vDecoder_3x8
+R15
+!i10b 1
+!s100 OiN2_2IbjWGk4cfDH6KX;3
+I]z]804@Y@c5T]_Q9nXd?[2
+R1
+R2
+w1702835426
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v
+L0 1
+R5
+r1
+!s85 0
+31
+R16
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v|
+!i113 1
+R9
+R10
+n@decoder_3x8
+vDecoder_3x8_using_2x4
+R15
+!i10b 1
+!s100 R65jl:Hb8P88m^1OB1>JN2
+IX0Vi60[Ao1;nR1Sg@<lj53
+R1
+R2
+w1702835565
+R3
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R16
+R7
+R8
+!i113 1
+R9
+R10
+n@decoder_3x8_using_2x4
+vDecoder_4x16_using_3x8
+Z21 !s110 1702836264
+!i10b 1
+!s100 E87SO]nHn^;ocd9[LLemW0
+IQZefQBIZBlji_Q[kl4DO20
+R1
+R2
+w1702835584
+R11
+R12
+L0 1
+R5
+r1
+!s85 0
+31
+Z22 !s108 1702836264.000000
+R13
+R14
+!i113 1
+R9
+R10
+n@decoder_4x16_using_3x8
+vtest1_Decoder_2x4
+R15
+!i10b 1
+!s100 jH`;TBdCXRP_dNJNz=A:`3
+INH6fN]R^llQXFR<TJGk^_3
+R1
+R2
+w1702836123
+R17
+R18
+L0 1
+R5
+r1
+!s85 0
+31
+R16
+R19
+R20
+!i113 1
+R9
+R10
+ntest1_@decoder_2x4
+vtest_Decoder3x8
+R0
+!i10b 1
+!s100 iooO?8gLiz@YPD9Td^3O;1
+I2e:Hno1Dza^TFKIXJ_Kg12
+R1
+R2
+w1702835202
+Z23 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v
+Z24 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z25 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v|
+Z26 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v|
+!i113 1
+R9
+R10
+ntest_@decoder3x8
+vtest_Decoder3x8_using_2x4
+!s110 1702835702
+!i10b 1
+!s100 CCdU4JY`1]:?=D:GSNCHm1
+I:gZe43d_5UAYD309gNzHF1
+R1
+R2
+w1702835521
+Z27 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v
+Z28 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z29 !s108 1702835702.000000
+Z30 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v|
+Z31 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v|
+!i113 1
+R9
+R10
+ntest_@decoder3x8_using_2x4
+vtest_Decoder4x16_using_3x8
+!s110 1702835703
+!i10b 1
+!s100 C=ahaEVnMj856T`K^kO:d3
+IiJJ@T@eabnj3>UmnB^XIi3
+R1
+R2
+w1702835536
+Z32 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v
+Z33 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v
+L0 1
+R5
+r1
+!s85 0
+31
+R29
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v|
+!i113 1
+R9
+R10
+ntest_@decoder4x16_using_3x8
+vtest_Decoder_2x4
+!s110 1702833534
+!i10b 1
+!s100 ZeIleFX>[kVBebCF[a?N^0
+I[7d^<V1g]9Ok@N`KSWCRQ2
+R1
+R2
+w1702271473
+R17
+R18
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1702833533.000000
+R19
+R20
+!i113 1
+R9
+R10
+ntest_@decoder_2x4
+vtest_Decoder_3x8
+R15
+!i10b 1
+!s100 9jNXiL>WQ59V;9o2<ncQM3
+I^^lSOQDhIXd_e>]i3M5iN0
+R1
+R2
+w1702836259
+R23
+R24
+L0 1
+R5
+r1
+!s85 0
+31
+R16
+R25
+R26
+!i113 1
+R9
+R10
+ntest_@decoder_3x8
+vtest_Decoder_3x8_using_2x4
+R21
+!i10b 1
+!s100 Z>BKec6B2hU]39b2lcGD82
+I>_H;QTmfQ<3nV2^GlmYHf3
+R1
+R2
+w1702836232
+R27
+R28
+L0 1
+R5
+r1
+!s85 0
+31
+R22
+R30
+R31
+!i113 1
+R9
+R10
+ntest_@decoder_3x8_using_2x4
+vtest_Decoder_4x16_using_3x8
+R21
+!i10b 1
+!s100 c=XnigXnI1]?mkde9lc3k3
+Iiod?c7gh7>bdhcPOk77U^3
+R1
+R2
+w1702836218
+R32
+R33
+L0 1
+R5
+r1
+!s85 0
+31
+R22
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v|
+R34
+!i113 1
+R9
+R10
+ntest_@decoder_4x16_using_3x8

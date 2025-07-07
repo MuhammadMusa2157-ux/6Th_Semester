@@ -1,0 +1,25 @@
+EE course for Finals Jan 2024.
+
+Chapter 3:
+	▪️Why Consider Return to Capital? 
+	▪️The origins of interest
+	▪️Simple Interest
+	▪️Compound interest
+	▪️The concept of equivalence
+	▪️Cash flow Diagram
+	▪️Interest formula relating present and future equivalent values of single cash flows
+	▪️Interest formulas relating a uniform series (annuity) to its present and future equivalent value
+	▪️Interest formulas for discrete compounding and discrete cash flows
+	▪️Deferred annuities
+	▪️Uniform series with beginning of period cash flows
+	▪️Equivalence calculations involving multiple interest formulas
+	▪️Interest formulas rating a uniform gradient of cash flows to its annual and present worths
+
+Chapter 4:
+	▪️Determine the minimum attractive rate of return
+	▪️The present worth method
+	▪️The future worth method
+	▪️The annual worth method
+	▪️The internal rate of return method
+	▪️The cost benefit ratio method
+	▪️The payback period method

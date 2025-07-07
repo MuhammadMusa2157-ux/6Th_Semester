@@ -1,0 +1,78 @@
+D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Counter_4_bit
+
+Top level modules:
+	test_Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Counter_8_bit
+
+Top level modules:
+	test_Counter_8_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_T_Uncontrolled_Async_Counter_4_bit
+
+Top level modules:
+	test_T_Uncontrolled_Async_Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_RAM_16x8
+
+Top level modules:
+	test_RAM_16x8
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Counter_4_bit
+
+Top level modules:
+	Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Counter_8_bit
+
+Top level modules:
+	Counter_8_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module T_Uncontrolled_Async_Counter_4_bit
+
+Top level modules:
+	T_Uncontrolled_Async_Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_T_Controlled_Async_Counter_4_bit
+
+Top level modules:
+	test_T_Controlled_Async_Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAM_16x8
+
+Top level modules:
+	RAM_16x8
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module T_Controlled_Async_Counter_4_bit
+
+Top level modules:
+	T_Controlled_Async_Counter_4_bit
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module T_Flip_Flop
+
+Top level modules:
+	T_Flip_Flop
+
+} {} {}}

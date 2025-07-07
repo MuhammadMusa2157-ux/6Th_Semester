@@ -1,0 +1,37 @@
+D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v {2 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_SR_Latch
+** Warning: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v(25): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+Top level modules:
+	test_SR_Latch
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v {2 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_SR_Flipflop
+** Warning: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v(25): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+Top level modules:
+	test_SR_Flipflop
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v {2 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_JK_Flipflop
+** Warning: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v(5): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+Top level modules:
+	test_JK_Flipflop
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Latch.v {0 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Latch.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SR_Latch
+** Error: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Latch.v(7): Register is illegal in left-hand side of continuous assignment
+** Error: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Latch.v(8): Register is illegal in left-hand side of continuous assignment
+** Warning: D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Latch.v(10): (vlog-2283) Extra semicolon in $unit (global) scope.
+
+} {4.0 6.0} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Flipflop.v {0 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Flipflop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SR_Flipflop
+** Error: (vlog-13069) D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/SR_Flipflop.v(1): near "q": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 5.0} {}}

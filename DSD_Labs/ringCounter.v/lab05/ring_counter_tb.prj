@@ -1,0 +1,2 @@
+verilog work "../ringCounter.v"
+verilog work "../ringCounter_tb.v"

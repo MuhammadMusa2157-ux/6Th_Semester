@@ -1,0 +1,16 @@
+25 	//reg/mem. location 0
+3A 	//reg 1
+7B 	//reg 2
+AA 	//reg 3
+DD 	//reg 4
+88 	//reg 5
+FF 	//reg 6
+AC 	//reg 7
+BB 	//reg 8
+00 	//reg 9
+11 	//reg 10
+88 	//reg 11
+77 	//reg 12
+99	//reg 13
+CC 	//reg 14
+BC 	//reg 15 and so on...

@@ -1,0 +1,389 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters
+valu
+Z0 !s110 1706761827
+!i10b 1
+!s100 za>FYbKj[KiSiEhAeD^493
+I82n2ojHTR_iQRLLz5i9i^2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1
+Z3 w1631477661
+8ALU.v
+FALU.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1706761827.000000
+Z6 !s107 memory.v|ALU.v|adder_ripple.v|register_8bit.v|register_4bit.v|demux.v|full_adder.v|mux.v|Seven_segment.v|dFlipflop.v|t_state_counter.v|program_counter.v|opcode_decoder.v|control_unit.v|tristatebuff_4bit.v|tristatebuff_8bit.v|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/top_mod.v|
+Z7 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/top_mod.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vcontrol_sequencer
+R0
+!i10b 1
+!s100 Qbf>o7nWf:8]K>J:5lkIF3
+I`5;Nb5UVbZ:c<z3fndWoI3
+R1
+R2
+w1706761470
+8control_unit.v
+Fcontrol_unit.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vdemux
+R0
+!i10b 1
+!s100 Z`>iJD81EMDR0_chZ>QGL3
+IW_3VlkKJS7T9<oTzeO6Kn3
+R1
+R2
+R3
+8demux.v
+Fdemux.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vdFlipflop
+R0
+!i10b 1
+!s100 g=lG1hm6eizjIPkh[HW`I1
+If=o3>@ilgXjfgzEj@3I6C0
+R1
+R2
+w1706761499
+8dFlipflop.v
+FdFlipflop.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+nd@flipflop
+vfulladder
+R0
+!i10b 1
+!s100 WiIJ?;9X>iK`eGT9zN2Q92
+ImEKG6E4dWOJA3O3W]_hE^3
+R1
+R2
+w1706761310
+8full_adder.v
+Ffull_adder.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vmain
+R0
+!i10b 1
+!s100 WYifBXeRSn:GJ]DbYc:M91
+I9mTh_;9[KJgkK0TZM=IDk1
+R1
+R2
+w1706725727
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/top_mod.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/top_mod.v
+L0 18
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vmux
+R0
+!i10b 1
+!s100 14oj70YPROH020JjEFB`F2
+IJSX94_^lh?aM><afa2V_j0
+R1
+R2
+R3
+8mux.v
+Fmux.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vopcode_decoder
+R0
+!i10b 1
+!s100 PBCg?fYCI?jF3PiF`SUiO0
+IGz1Zm7T;`Wg;dSSTzzH9I0
+R1
+R2
+w1706761576
+8opcode_decoder.v
+Fopcode_decoder.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vprogram_counter
+R0
+!i10b 1
+!s100 EE@mbPlRHYhI6DZWX9<Il0
+Ii[IHik66fEF=8PNILVIo>1
+R1
+R2
+w1706761275
+8program_counter.v
+Fprogram_counter.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vreg_4bit
+R0
+!i10b 1
+!s100 T5ni1UHnBc[P12GH<?>f`0
+I4o>XZSanVFNT5NJhO<0O11
+R1
+R2
+R3
+8register_4bit.v
+Fregister_4bit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vreg_8bit
+R0
+!i10b 1
+!s100 74ieXC<=T7PZ:=d]c?Lc00
+IEP<jzO8=3CXfLTcB^jYa>0
+R1
+R2
+R3
+8register_8bit.v
+Fregister_8bit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vripple_adder
+R0
+!i10b 1
+!s100 `Wc]?RLiKjm^mDGiHz@mA3
+I<l0>:5zgz0]@C>=_TX3M11
+R1
+R2
+w1706761345
+8adder_ripple.v
+Fadder_ripple.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vrom
+R0
+!i10b 1
+!s100 3<QBKMj]<D@k1<hQ[LbYh2
+IX=:Y7;LALVODQM2dmzXX11
+R1
+R2
+w1706728443
+8memory.v
+Fmemory.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vsevenseg
+R0
+!i10b 1
+!s100 zX7E]gWllBM05@n5gGSD62
+I<?NRM_:?F05kVodol4^F80
+R1
+R2
+R3
+8Seven_segment.v
+FSeven_segment.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vstate_counter
+R0
+!i10b 1
+!s100 MCIH_amn7F10NCzGF9lkb1
+IlGhQF4b`QJcZREWZDgK?f2
+R1
+R2
+R3
+8t_state_counter.v
+Ft_state_counter.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_main
+R0
+!i10b 1
+!s100 cYHOn?iRYWQ7a=MK6hT4P1
+IK]>j;hZ;h6`3:;c3]OWKl1
+R1
+R2
+w1706728844
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tb_top.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tb_top.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1706761826.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tb_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tb_top.v|
+!i113 1
+R8
+R9
+vtristatebuff_4bit
+R0
+!i10b 1
+!s100 cVkeBz@eM6Y?5A^<LTc;O2
+I21?iV7RE1DGDzd<J_RT8g1
+R1
+R2
+w1706761765
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tristatebuff_4bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tristatebuff_4bit.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tristatebuff_4bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/projects/SAP-1/tristatebuff_4bit.v|
+!i113 1
+R8
+R9
+vtristatebuff_8bit
+R0
+!i10b 1
+!s100 ^XQJmB6O;4hCe08lGa[U@1
+Il5kjT]>fO0G@k<XM5HzF`1
+R1
+R2
+w1706761793
+8tristatebuff_8bit.v
+Ftristatebuff_8bit.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

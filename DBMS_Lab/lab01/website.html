@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Booking Form</title>
+</head>
+<body>
+    <form action="" style="font-family: Arial, sans-serif; font-size: 16px;">
+        <h1 style="text-align: center; color: #333333;">Car Service Booking Form</h1>
+        <p style="text-align: center; color: #666666;">Please fill out the form below to book your car service.</p>
+        <div style="display: flex; justify-content: center; margin: 20px;">
+            <div style="width: 500px; border: 2px solid #cccccc; border-radius: 10px; padding: 20px;">
+                <h2 style="color: #333333;">Personal Details</h2>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" id="name" name="name" placeholder="Name" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <input type="email" id="email" name="email" placeholder="Email" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                </div>
+                <h2 style="color: #333333;">Car Details</h2>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" id="make" name="make" placeholder="Make" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <input type="text" id="model" name="model" placeholder="Model" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <input type="text" id="year" name="year" placeholder="Year" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <input type="text" id="mileage" name="mileage" placeholder="Mileage" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                </div>
+                <h2 style="color: #333333;">Service Details</h2>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <select id="service-type" name="service-type" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                        <option value="" disabled selected>Select Service Type</option>
+                        <option value="Oil Change">Oil Change</option>
+                        <option value="Tire Rotation">Tire Rotation</option>
+                        <option value="Brake Inspection">Brake Inspection</option>
+                        <option value="Battery Check">Battery Check</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="date" id="service-date" name="service-date" required style="height: 40px; border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;">
+                    <textarea id="service-notes" name="service-notes" placeholder="Additional Notes" rows="5" cols="50" style="border: 2px solid #cccccc; border-radius: 10px; padding: 10px; color: #333333;"></textarea>
+                </div>
+                <input type="submit" value="Book Now" style="width: 100%; height: 50px; background-color: #00a0d2; border: none; border-radius: 10px; color: white; font-weight: bold; margin-top: 20px; cursor: pointer;">
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*
+ * frontend/src/css/style.css
+ *
+ * This file is for any custom CSS rules that you might want to add
+ * beyond what Tailwind CSS provides.
+ *
+ * It's currently empty because Tailwind classes are used directly in index.html,
+ * and specific element styles are in the <style> tag within index.html.
+ *
+ * Example:
+ * body {
+ * font-family: 'Roboto', sans-serif;
+ * }
+ * .custom-shadow {
+ * box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+ * }
+ */
+
+/* Add your custom styles here if needed */

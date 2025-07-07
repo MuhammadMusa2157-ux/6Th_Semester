@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes
+vCustom_Mux
+Z0 !s110 1702059362
+!i10b 1
+!s100 TI2R<Nl@eOK4jP7aU0lJ51
+I=[o>Xm4:an_Y?58_4WoO32
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/multiplexers
+w1702055883
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1702059362.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@custom_@mux
+vMux_2x1
+R0
+!i10b 1
+!s100 NDf9`^;[k<E]dgPbPEe:^1
+IVmT7oN[QX[6lzgNBM8UDL1
+R1
+R2
+w1702054868
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v|
+!i113 1
+R5
+R6
+n@mux_2x1
+vMux_4to1_using_Mux2x1
+Z7 !s110 1702059363
+!i10b 1
+!s100 4N0DeYDnGEDK8RaLmN`hj0
+IgMFY7k8cb`;zYSDmHVM4S3
+R1
+R2
+w1702055453
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1702059363.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v|
+!i113 1
+R5
+R6
+n@mux_4to1_using_@mux2x1
+vMux_4x1
+R7
+!i10b 1
+!s100 @BQ>dWa6hROPo`^^blARN0
+I6KDkzRMC[jYeFRQkzgL:G0
+R1
+R2
+w1702055138
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v|
+!i113 1
+R5
+R6
+n@mux_4x1
+vtest_Custom_Mux
+Z9 !s110 1702059364
+!i10b 1
+!s100 =9cYO[mnDIYdY4L8VQdeA3
+Ia@KPm9D=i=@E:eCn6YETd3
+R1
+R2
+w1702056193
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v|
+!i113 1
+R5
+R6
+ntest_@custom_@mux
+vtest_Mux_2x1
+R9
+!i10b 1
+!s100 UDoSFiOZI_XcoV`C0`Q@P1
+IhmEIRlH^_^GkSUTXe4lnP3
+R1
+R2
+w1701665184
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1702059364.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v|
+!i113 1
+R5
+R6
+ntest_@mux_2x1
+vtest_Mux_4to1_using_Mux2x1
+R0
+!i10b 1
+!s100 Pb<kg6`nKN=K3[EY7Dabc3
+IS_L`>4VPH5aZQdamDcSlc3
+R1
+R2
+w1702056176
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v|
+!i113 1
+R5
+R6
+ntest_@mux_4to1_using_@mux2x1
+vtest_Mux_4x1
+R9
+!i10b 1
+!s100 _E<I;7cZ==Ad]Ln;GTj^k2
+I:3kI8^_95R;26LCSiFQIX3
+R1
+R2
+w1702056349
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v|
+!i113 1
+R5
+R6
+ntest_@mux_4x1

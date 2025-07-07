@@ -1,0 +1,294 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/aimal/Downloads/aimalexe_Downloads/sap
+vCounter_4_bit
+!s110 1706721593
+!i10b 1
+!s100 z8X2dZL>7T7hVf7HG05B22
+IdNnQXI]U827n[jXSizEl61
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters
+w1706548572
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1706721593.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_4_bit.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@counter_4_bit
+vCounter_8_bit
+Z5 !s110 1706721597
+!i10b 1
+!s100 bmC1a7@0<VVAcHCJKOoW00
+I2QAbi1[>dOedlFzS4CHUO1
+R0
+R1
+w1706548923
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1706721596.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/Counter_8_bit.v|
+!i113 1
+R3
+R4
+n@counter_8_bit
+vRAM_16x8
+!s110 1706721616
+!i10b 1
+!s100 F5i40SFO`c]R^eHRF9B]X2
+IkJL67;mGnc<H3[lUR^nG82
+R0
+R1
+w1706721578
+Z6 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v
+Z7 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1706721615.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v|
+!i113 1
+R3
+R4
+n@r@a@m_16x8
+vram_16x8
+Z9 !s110 1706721472
+!i10b 1
+!s100 84oRWI;UQD<[:79X]cE1X2
+IMeBH=CEc6i_Cc[Nc1Q1jg1
+R0
+R1
+w1706679058
+R6
+R7
+L0 1
+R2
+r1
+!s85 0
+31
+Z10 !s108 1706721472.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/RAM_16x8.v|
+R8
+!i113 1
+R3
+R4
+vT_Controlled_Async_Counter_4_bit
+Z11 !s110 1706721598
+!i10b 1
+!s100 ?l<IWTgQZRo_1]VSb6SQ<3
+I]9f67;kIOg8:BSdcB8Nbg3
+R0
+R1
+w1706552969
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z12 !s108 1706721598.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Controlled_Async_Counter_4_bit.v|
+!i113 1
+R3
+R4
+n@t_@controlled_@async_@counter_4_bit
+vT_Flip_Flop
+Z13 !s110 1706721599
+!i10b 1
+!s100 RmBzzo5Ok_EAfCe`oB_Tm3
+IWLQfJnInCaWlzKU<h^DD30
+R0
+R1
+w1706554039
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v
+L0 1
+R2
+r1
+!s85 0
+31
+R12
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Flip_Flop.v|
+!i113 1
+R3
+R4
+n@t_@flip_@flop
+vT_Uncontrolled_Async_Counter_4_bit
+R13
+!i10b 1
+!s100 zLG>L4KS2R1fQYRYJUa`11
+IdckL[^`a0YDXV65`43Ho>2
+R0
+R1
+w1706552382
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1706721599.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/T_Uncontrolled_Async_Counter_4_bit.v|
+!i113 1
+R3
+R4
+n@t_@uncontrolled_@async_@counter_4_bit
+vtb_ram_16x8
+R9
+!i10b 1
+!s100 MBN0z?kE1VmQG7DLn=MEh3
+I:9J;07_JLgV<gY_z:zgiA2
+R0
+R1
+w1706679057
+Z14 8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v
+Z15 FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v
+L0 3
+R2
+r1
+!s85 0
+31
+R10
+Z16 !s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_RAM_16x8.v|
+!i113 1
+R3
+R4
+vtest_Counter_4_bit
+!s110 1706721596
+!i10b 1
+!s100 9NDQH5z1zB1Fo3h?VHZ0B0
+IeKFiZo;b?D9ZHNjPf?=9?0
+R0
+R1
+w1706548365
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1706721594.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_4_bit.v|
+!i113 1
+R3
+R4
+ntest_@counter_4_bit
+vtest_Counter_8_bit
+R5
+!i10b 1
+!s100 CHjnLj=XkLQ<1UM?5jIzF0
+ICmGIFgkOKmdDXV0ljF9o43
+R0
+R1
+w1706549479
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z18 !s108 1706721597.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_Counter_8_bit.v|
+!i113 1
+R3
+R4
+ntest_@counter_8_bit
+vtest_RAM_16x8
+!s110 1706721605
+!i10b 1
+!s100 `;7QiWC2z=oEGMb03?@J22
+If9_1Ad7DQQX4@:kAQR@=f2
+R0
+R1
+w1706721583
+R14
+R15
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1706721605.000000
+R16
+R17
+!i113 1
+R3
+R4
+ntest_@r@a@m_16x8
+vtest_T_Controlled_Async_Counter_4_bit
+!s110 1706721600
+!i10b 1
+!s100 KCY=2j2nf5FXkfbNIfe_g0
+I[fg^4Z098m7mJb0@hkMdZ2
+R0
+R1
+w1706554422
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1706721600.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Controlled_Async_Counter_4_bit.v|
+!i113 1
+R3
+R4
+ntest_@t_@controlled_@async_@counter_4_bit
+vtest_T_Uncontrolled_Async_Counter_4_bit
+R11
+!i10b 1
+!s100 dFK0iNk[KmUha[zEMF9Sb3
+IaD3HXMJ=baX;P0=VUSG?11
+R0
+R1
+w1706553288
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+R18
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab10/counters/test_T_Uncontrolled_Async_Counter_4_bit.v|
+!i113 1
+R3
+R4
+ntest_@t_@uncontrolled_@async_@counter_4_bit

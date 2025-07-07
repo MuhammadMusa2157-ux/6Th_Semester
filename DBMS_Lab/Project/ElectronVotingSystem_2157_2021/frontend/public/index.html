@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting & Election Management System</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external custom CSS if needed -->
+    <!-- <link rel="stylesheet" href="../src/css/style.css"> -->
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        /* Button styles */
+        .btn-primary {
+            @apply bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out shadow-md;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out shadow-sm;
+        }
+        /* Input field styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"], /* Added for date input */
+        select {
+            @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200;
+        }
+        /* Label styles */
+        label {
+            @apply block text-gray-700 text-sm font-medium mb-2;
+        }
+        /* Form group spacing */
+        .form-group {
+            @apply mb-4;
+        }
+        /* Section title styles */
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-400 pb-2;
+        }
+        /* Tab button styles */
+        .tab-button {
+            @apply py-3 px-6 text-lg font-medium text-gray-600 border-b-2 border-transparent hover:text-blue-600 hover:border-blue-400 transition duration-200;
+        }
+        .tab-button.active {
+            @apply text-blue-700 border-blue-600;
+        }
+        /* Candidate card styles */
+        .candidate-card {
+            @apply bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out flex flex-col items-center text-center;
+        }
+        .candidate-card-selected {
+            @apply ring-4 ring-blue-500 border-blue-500;
+        }
+        /* Custom radio button styles (for voting) */
+        .radio-container {
+            display: block; /* Ensures each radio is on a new line */
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .radio-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .radio-container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .radio-container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (dot) when checked */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot) when checked */
+        .radio-container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot) */
+        .radio-container .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center py-10">
+    <div class="container">
+        <h1 class="text-4xl font-extrabold text-center text-blue-800 mb-8">🗳️ Election Management System 🗳️</h1>
+
+        <!-- Navigation Tabs -->
+        <div class="flex justify-center mb-8 border-b border-gray-200">
+            <button class="tab-button active" onclick="showTab('register')">Register Voter</button>
+            <button class="tab-button" onclick="showTab('candidates')">View Candidates</button>
+            <button class="tab-button" onclick="showTab('vote')">Cast Your Vote</button>
+            <button class="tab-button" onclick="showTab('results')">Election Results</button>
+        </div>
+
+        <!-- Voter Registration Section -->
+        <div id="register" class="tab-content">
+            <h2 class="section-title">Voter Registration</h2>
+            <form id="voterRegistrationForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john.doe@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationalId">National ID / Unique Identifier</label>
+                    <input type="text" id="nationalId" placeholder="12345-6789012-3" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="123 Main St, City, Country" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+                <div class="form-group col-span-1 md:col-span-2 flex justify-end">
+                    <button type="submit" class="btn-primary">Register Voter</button>
+                </div>
+            </form>
+            <div id="registrationMessage" class="mt-4 p-3 rounded-lg text-green-700 bg-green-100 hidden"></div>
+        </div>
+
+        <!-- Candidate Information Section -->
+        <div id="candidates" class="tab-content hidden">
+            <h2 class="section-title">Meet the Candidates</h2>
+            <div id="candidateList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Candidate cards will be injected here by JavaScript -->
+            </div>
+            <div id="noCandidatesMessage" class="text-center text-gray-500 mt-8 hidden">
+                No candidates available at the moment. Please check back later.
+            </div>
+        </div>
+
+        <!-- Vote Submission Section -->
+        <div id="vote" class="tab-content hidden">
+            <h2 class="section-title">Cast Your Vote</h2>
+            <form id="voteSubmissionForm" class="space-y-6">
+                <div class="form-group">
+                    <label for="voterIdForVote">Your National ID / Unique Identifier</label>
+                    <input type="text" id="voterIdForVote" placeholder="Enter your ID to vote" required>
+                </div>
+                <div class="form-group">
+                    <label for="voterPasswordForVote">Your Password</label>
+                    <input type="password" id="voterPasswordForVote" placeholder="Enter your password" required>
+                </div>
+                <p class="text-gray-700 font-medium text-lg mb-4">Select the candidate you wish to vote for:</p>
+                <div id="voteCandidatesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Candidates for voting will be injected here by JavaScript -->
+                    <p id="noVoteCandidatesMessage" class="col-span-full text-center text-gray-500 hidden">
+                        No candidates to vote for.
+                    </p>
+                </div>
+                <div class="flex justify-end mt-6">
+                    <button type="submit" class="btn-primary">Submit Vote</button>
+                </div>
+            </form>
+            <div id="voteMessage" class="mt-4 p-3 rounded-lg text-green-700 bg-green-100 hidden"></div>
+        </div>
+
+        <!-- Election Results Section -->
+        <div id="results" class="tab-content hidden">
+            <h2 class="section-title">Election Results</h2>
+            <div id="resultsDisplay" class="text-lg">
+                <p class="text-gray-600 mb-4">Results are not yet available or are being compiled.</p>
+                <!-- Live results/summary will be displayed here via JS -->
+            </div>
+            <div id="noResultsMessage" class="text-center text-gray-500 mt-8 hidden">
+                Results will be displayed here once the election concludes.
+            </div>
+        </div>
+
+        <!-- Custom Alert/Message Box -->
+        <div id="messageBox" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+            <div class="bg-white rounded-lg p-6 shadow-xl max-w-sm w-full text-center">
+                <h3 id="messageBoxTitle" class="text-xl font-bold mb-4 text-gray-800"></h3>
+                <p id="messageBoxContent" class="text-gray-700 mb-6"></p>
+                <button id="messageBoxClose" class="btn-primary">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // --- Data Mocking (for frontend demonstration) ---
+        // In a real application, this data would come from your backend API.
+        let registeredVoters = []; // Store registered voters temporarily
+        let candidates = [
+            { id: 'cand1', name: 'Alice Johnson', party: 'Unity Party', bio: 'Experienced leader focused on economic growth.', votes: 0, imageUrl: 'https://placehold.co/100x100/A3B8CC/FFFFFF?text=AJ' },
+            { id: 'cand2', name: 'Bob Williams', party: 'Progressive Front', bio: 'Champion for social justice and environmental causes.', votes: 0, imageUrl: 'https://placehold.co/100x100/C0D9EE/FFFFFF?text=BW' },
+            { id: 'cand3', name: 'Charlie Davis', party: 'Centrist Alliance', bio: 'Dedicated to balanced policies and community development.', votes: 0, imageUrl: 'https://placehold.co/100x100/8B9AAD/FFFFFF?text=CD' }
+        ];
+        let votesCast = {}; // To store which voter (by nationalId) has voted, preventing double voting
+
+        // --- Utility Functions ---
+
+        /**
+         * Displays a custom message box instead of alert().
+         * @param {string} title - The title of the message box.
+         * @param {string} message - The content message.
+         * @param {string} type - 'success' or 'error' (influences styling, though not implemented fully here).
+         */
+        function showMessageBox(title, message, type = 'info') {
+            const messageBox = document.getElementById('messageBox');
+            document.getElementById('messageBoxTitle').textContent = title;
+            document.getElementById('messageBoxContent').textContent = message;
+            messageBox.classList.remove('hidden');
+        }
+
+        document.getElementById('messageBoxClose').addEventListener('click', () => {
+            document.getElementById('messageBox').classList.add('hidden');
+        });
+
+        // --- Tab Navigation Logic ---
+        function showTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            // Deactivate all tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.remove('hidden');
+            // Activate the selected tab button
+            document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+
+            // Specific actions for each tab when shown
+            if (tabId === 'candidates') {
+                displayCandidates('candidateList');
+            } else if (tabId === 'vote') {
+                displayCandidates('voteCandidatesList', true); // true to enable radio buttons for voting
+            } else if (tabId === 'results') {
+                displayElectionResults();
+            }
+        }
+
+        // Initialize with the register tab shown
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('register');
+        });
+
+        // --- Voter Registration Logic ---
+        document.getElementById('voterRegistrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const nationalId = document.getElementById('nationalId').value.trim();
+            const dob = document.getElementById('dob').value;
+            const address = document.getElementById('address').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (fullName && email && nationalId && dob && address && password) {
+                // In a real application, you would send this data to your backend
+                // using `fetch()` or `XMLHttpRequest`.
+                // Example:
+                // fetch('/api/register-voter', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify({ fullName, email, nationalId, dob, address, password })
+                // })
+                // .then(response => response.json())
+                // .then(data => {
+                //     if (data.success) {
+                //         showMessageBox('Registration Successful', 'You have been registered as a voter.');
+                //         registeredVoters.push({ nationalId, password, hasVoted: false }); // Mock voter status
+                //         this.reset(); // Clear form
+                //     } else {
+                //         showMessageBox('Registration Failed', data.message || 'Something went wrong.');
+                //     }
+                // })
+                // .catch(error => {
+                //     console.error('Error during registration:', error);
+                //     showMessageBox('Error', 'Network error or server unreachable.');
+                // });
+
+                // For demonstration, we'll mock the success:
+                if (registeredVoters.some(v => v.nationalId === nationalId)) {
+                    showMessageBox('Registration Failed', 'This National ID is already registered.');
+                } else {
+                    showMessageBox('Registration Successful', 'You have been registered as a voter. You can now proceed to vote.');
+                    registeredVoters.push({ nationalId, password, hasVoted: false }); // Add to mock list
+                    this.reset(); // Clear the form after successful registration
+                }
+            } else {
+                showMessageBox('Missing Information', 'Please fill in all required fields for registration.');
+            }
+        });
+
+        // --- Display Candidates Logic ---
+        function displayCandidates(elementId, forVoting = false) {
+            const container = document.getElementById(elementId);
+            container.innerHTML = ''; // Clear previous content
+
+            if (candidates.length === 0) {
+                document.getElementById(elementId === 'candidateList' ? 'noCandidatesMessage' : 'noVoteCandidatesMessage').classList.remove('hidden');
+                return;
+            } else {
+                 document.getElementById(elementId === 'candidateList' ? 'noCandidatesMessage' : 'noVoteCandidatesMessage').classList.add('hidden');
+            }
+
+
+            candidates.forEach(candidate => {
+                const card = document.createElement('div');
+                card.className = `candidate-card ${forVoting ? 'cursor-pointer' : ''}`;
+                // If for voting, add a click listener to select the card visually
+                if (forVoting) {
+                    card.addEventListener('click', () => {
+                        // Deselect any previously selected card
+                        document.querySelectorAll('.candidate-card-selected').forEach(selectedCard => {
+                            selectedCard.classList.remove('candidate-card-selected');
+                        });
+                        // Select the current card
+                        card.classList.add('candidate-card-selected');
+                        // Set the radio button for this card as checked
+                        const radioButton = card.querySelector(`input[name="selectedCandidate"]`);
+                        if (radioButton) {
+                            radioButton.checked = true;
+                        }
+                    });
+                }
+
+
+                card.innerHTML = `
+                    <img src="${candidate.imageUrl}" alt="${candidate.name}" class="w-24 h-24 rounded-full mb-4 border-4 border-blue-300 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">${candidate.name}</h3>
+                    <p class="text-blue-600 font-medium mb-3">${candidate.party}</p>
+                    <p class="text-gray-700 text-sm mb-4 line-clamp-3">${candidate.bio}</p>
+                    ${forVoting ? `
+                        <label class="radio-container">
+                            Select
+                            <input type="radio" name="selectedCandidate" value="${candidate.id}" required>
+                            <span class="checkmark"></span>
+                        </label>
+                    ` : ''}
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // --- Vote Submission Logic ---
+        document.getElementById('voteSubmissionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const voterId = document.getElementById('voterIdForVote').value.trim();
+            const voterPassword = document.getElementById('voterPasswordForVote').value.trim();
+            const selectedCandidateElement = document.querySelector('input[name="selectedCandidate"]:checked');
+
+            if (!voterId || !voterPassword) {
+                showMessageBox('Missing Information', 'Please enter your National ID and password to vote.');
+                return;
+            }
+
+            if (!selectedCandidateElement) {
+                showMessageBox('No Candidate Selected', 'Please select a candidate before submitting your vote.');
+                return;
+            }
+
+            const selectedCandidateId = selectedCandidateElement.value;
+
+            // Mock voter authentication and single vote constraint
+            const voter = registeredVoters.find(v => v.nationalId === voterId);
+
+            if (!voter) {
+                showMessageBox('Vote Failed', 'Voter not found. Please register first.');
+                return;
+            }
+
+            if (voter.password !== voterPassword) {
+                showMessageBox('Vote Failed', 'Incorrect password.');
+                return;
+            }
+
+            if (voter.hasVoted) {
+                showMessageBox('Vote Failed', 'You have already cast your vote.');
+                return;
+            }
+
+            // In a real application, you would send the voterId and selectedCandidateId to your backend.
+            // The backend would verify the voter, record the vote, and update candidate tallies securely.
+            // Example fetch call:
+            // fetch('/api/submit-vote', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify({ voterId, candidateId: selectedCandidateId })
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     if (data.success) {
+            //         showMessageBox('Vote Submitted', 'Your vote has been successfully cast!');
+            //         voter.hasVoted = true; // Mark as voted in mock data
+            //         updateCandidateVotes(selectedCandidateId); // Update mock vote count
+            //         this.reset(); // Clear form
+            //     } else {
+            //         showMessageBox('Vote Failed', data.message || 'Something went wrong while submitting your vote.');
+            //     }
+            // })
+            // .catch(error => {
+            //     console.error('Error during vote submission:', error);
+            //     showMessageBox('Error', 'Network error or server unreachable.');
+            // });
+
+            // For demonstration, directly update mock data:
+            showMessageBox('Vote Submitted', 'Your vote has been successfully cast!');
+            voter.hasVoted = true; // Mark as voted
+            updateCandidateVotes(selectedCandidateId); // Update vote count
+            this.reset(); // Clear form
+
+            // Remove selected state from candidate cards
+            document.querySelectorAll('.candidate-card-selected').forEach(card => {
+                card.classList.remove('candidate-card-selected');
+            });
+        });
+
+        function updateCandidateVotes(candidateId) {
+            const candidate = candidates.find(c => c.id === candidateId);
+            if (candidate) {
+                candidate.votes++;
+            }
+        }
+
+        // --- Election Results Logic ---
+        function displayElectionResults() {
+            const resultsDisplay = document.getElementById('resultsDisplay');
+            resultsDisplay.innerHTML = ''; // Clear previous content
+
+            if (candidates.length === 0) {
+                 document.getElementById('noResultsMessage').classList.remove('hidden');
+                 return;
+            } else {
+                document.getElementById('noResultsMessage').classList.add('hidden');
+            }
+
+            // Sort candidates by votes in descending order
+            const sortedCandidates = [...candidates].sort((a, b) => b.votes - a.votes);
+
+            let totalVotes = candidates.reduce((sum, c) => sum + c.votes, 0);
+
+            if (totalVotes === 0) {
+                resultsDisplay.innerHTML = '<p class="text-gray-600 mb-4">No votes have been cast yet.</p>';
+                return;
+            }
+
+            const resultsHtml = `
+                <div class="mb-6 text-xl font-bold text-gray-800">Total Votes Cast: ${totalVotes}</div>
+                <div class="space-y-4">
+                    ${sortedCandidates.map(candidate => `
+                        <div class="flex justify-between items-center bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <img src="${candidate.imageUrl}" alt="${candidate.name}" class="w-12 h-12 rounded-full mr-4 border-2 border-blue-200 object-cover">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">${candidate.name}</h4>
+                                    <p class="text-blue-600 text-sm">${candidate.party}</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-xl font-bold text-green-700">${candidate.votes} Votes</p>
+                                <p class="text-gray-500 text-sm">${((candidate.votes / totalVotes) * 100).toFixed(2)}%</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            resultsDisplay.innerHTML = resultsHtml;
+        }
+    </script>
+</body>
+</html>

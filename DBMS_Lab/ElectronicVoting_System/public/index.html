@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Voting System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 20px auto; }
+        h1, h2 { color: #333; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="number"], select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        button:hover { background-color: #218838; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #e9e9e9; margin-bottom: 10px; padding: 10px; border-radius: 4px; }
+        .error { color: red; margin-top: 10px; }
+        .success { color: green; margin-top: 10px; }
+        .message { margin-top: 10px; } /* Base style for message area */
+        hr { border: 0; height: 1px; background-color: #ccc; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Electronic Voting System</h1>
+
+        <div id="voter-section">
+            <h2>Register New Voter</h2>
+            <form id="registerVoterForm">
+                <label for="voterName">Voter Name:</label>
+                <input type="text" id="voterName" name="Name" required>
+                <button type="submit">Register Voter</button>
+                <p id="voterMessage" class="message"></p>
+            </form>
+
+            <h2>Registered Voters</h2>
+            <ul id="votersList"></ul>
+        </div>
+
+        <hr>
+
+        <div id="election-section">
+            <h2>Add New Election</h2>
+            <form id="addElectionForm">
+                <label for="electionType">Election Type:</label>
+                <input type="text" id="electionType" name="ElectionType" required>
+                <button type="submit">Add Election</button>
+                <p id="electionMessage" class="message"></p>
+            </form>
+
+            <h2>Available Elections</h2>
+            <ul id="electionsList"></ul>
+        </div>
+
+        <hr>
+
+        <div id="candidate-section">
+            <h2>Add New Candidate</h2>
+            <form id="addCandidateForm">
+                <label for="candidateName">Candidate Name:</label>
+                <input type="text" id="candidateName" name="Name" required>
+                <label for="candidateParty">Party:</label>
+                <input type="text" id="candidateParty" name="Party" required>
+                <label for="candidateElection">Select Election:</label>
+                <select id="candidateElection" name="ElectionID" required></select>
+                <button type="submit">Add Candidate</button>
+                <p id="candidateMessage" class="message"></p>
+            </form>
+
+            <h2>Candidates</h2>
+            <ul id="candidatesList"></ul>
+        </div>
+
+        <hr>
+
+        <div id="polling-station-section">
+            <h2>Add New Polling Station</h2>
+            <form id="addPollingStationForm">
+                <label for="pollingStationLocation">Location:</label>
+                <input type="text" id="pollingStationLocation" name="Location" required>
+                <button type="submit">Add Polling Station</button>
+                <p id="pollingStationMessage" class="message"></p>
+            </form>
+
+            <h2>Polling Stations</h2>
+            <ul id="pollingStationsList"></ul>
+        </div>
+
+        <hr>
+
+        <div id="vote-section">
+            <h2>Cast Your Vote</h2>
+            <form id="castVoteForm">
+                <label for="voteVoter">Select Voter:</label>
+                <select id="voteVoter" name="VoterID" required></select>
+                <label for="voteElection">Select Election:</label>
+                <select id="voteElection" name="ElectionID" required></select>
+                <label for="voteCandidate">Select Candidate:</label>
+                <select id="voteCandidate" name="CandidateID" required></select>
+                <label for="votePollingStation">Select Polling Station:</label>
+                <select id="votePollingStation" name="PollingStationID" required></select>
+                <button type="submit">Cast Vote</button>
+                <p id="voteMessage" class="message"></p>
+            </form>
+
+            <h2>Votes Cast</h2>
+            <ul id="votesList"></ul>
+        </div>
+
+        <hr>
+
+        <div id="results-section">
+            <h2>Election Results</h2>
+            <label for="resultsElection">Select Election for Results:</label>
+            <select id="resultsElection"></select>
+            <button id="getResultsButton">Get Results</button>
+            <ul id="electionResultsList"></ul>
+            <p id="resultsMessage" class="message"></p>
+        </div>
+    </div>
+
+    <script>
+        // Ensure this matches your Laravel server's URL.
+        // If `php artisan serve` runs on a different port, update it here.
+        const API_BASE_URL = 'http://127.0.0.1:8000/api';
+
+        async function fetchData(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    // For 404 Not Found, provide a more specific message if available from backend
+                    if (response.status === 404) {
+                        throw new Error(`Resource not found: ${errorData.message || 'The requested URL was not found on the server.'}`);
+                    }
+                    throw new Error(errorData.message || `HTTP error! Status: ${response.status}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch error:', error);
+                // Re-throw the error so calling functions can handle it
+                throw error;
+            }
+        }
+
+        async function postData(url, data) {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json' // Laravel expects this for API responses
+                    },
+                    body: JSON.stringify(data)
+                });
+                const responseData = await response.json(); // Always try to parse JSON
+                if (!response.ok) {
+                    // Check if it's a validation error (422)
+                    if (response.status === 422 && responseData.errors) {
+                        const errorMessages = Object.values(responseData.errors).flat().join('; ');
+                        throw new Error(`Validation Error: ${errorMessages}`);
+                    }
+                    throw new Error(responseData.message || `HTTP error! Status: ${response.status} - ${JSON.stringify(responseData)}`);
+                }
+                return responseData;
+            } catch (error) {
+                console.error('POST error:', error);
+                throw error; // Re-throw for specific handling in UI
+            }
+        }
+
+        function displayMessage(elementId, message, isError = false) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.className = isError ? 'error' : 'success'; // Apply CSS class
+            // Clear message after a few seconds
+            setTimeout(() => {
+                element.textContent = '';
+                element.className = 'message'; // Reset class
+            }, 5000); // 5 seconds
+        }
+
+        // --- Load Data Functions ---
+        async function loadVoters() {
+            try {
+                const voters = await fetchData(`${API_BASE_URL}/voters`);
+                const list = document.getElementById('votersList');
+                list.innerHTML = ''; // Clear existing list
+                const voteVoterSelect = document.getElementById('voteVoter');
+                voteVoterSelect.innerHTML = '<option value="">Select Voter</option>'; // Default option
+                if (voters.length === 0) {
+                    list.innerHTML = '<li>No voters registered yet.</li>';
+                }
+                voters.forEach(voter => {
+                    list.innerHTML += `<li>ID: ${voter.VoterID}, Name: ${voter.Name}</li>`;
+                    // CORRECTED LINE: Removed span and math-inline
+                    voteVoterSelect.innerHTML += `<option value="${voter.VoterID}">${voter.Name}</option>`;
+                });
+            } catch (error) {
+                displayMessage('voterMessage', `Error loading voters: ${error.message}`, true);
+            }
+        }
+
+        async function loadElections() {
+            try {
+                const elections = await fetchData(`${API_BASE_URL}/elections`);
+                const list = document.getElementById('electionsList');
+                list.innerHTML = '';
+                const candidateElectionSelect = document.getElementById('candidateElection');
+                candidateElectionSelect.innerHTML = '<option value="">Select Election</option>';
+                const voteElectionSelect = document.getElementById('voteElection');
+                voteElectionSelect.innerHTML = '<option value="">Select Election</option>';
+                const resultsElectionSelect = document.getElementById('resultsElection');
+                resultsElectionSelect.innerHTML = '<option value="">Select Election</option>';
+
+                if (elections.length === 0) {
+                    list.innerHTML = '<li>No elections added yet.</li>';
+                }
+                elections.forEach(election => {
+                    list.innerHTML += `<li>ID: ${election.ElectionID}, Type: ${election.ElectionType}</li>`;
+                    // CORRECTED LINE: Removed span and math-inline
+                    candidateElectionSelect.innerHTML += `<option value="${election.ElectionID}">${election.ElectionType}</option>`;
+                    // CORRECTED LINE: Removed span and math-inline
+                    voteElectionSelect.innerHTML += `<option value="${election.ElectionID}">${election.ElectionType}</option>`;
+                    // CORRECTED LINE: Removed span and math-inline
+                    resultsElectionSelect.innerHTML += `<option value="${election.ElectionID}">${election.ElectionType}</option>`;
+                });
+            } catch (error) {
+                displayMessage('electionMessage', `Error loading elections: ${error.message}`, true);
+            }
+        }
+
+        // Load candidates; if an electionId is provided, filter candidates for that election in the vote form
+        async function loadCandidates(filterElectionId = null) {
+            try {
+                const candidates = await fetchData(`${API_BASE_URL}/candidates`);
+                const list = document.getElementById('candidatesList');
+                list.innerHTML = '';
+                const voteCandidateSelect = document.getElementById('voteCandidate');
+                voteCandidateSelect.innerHTML = '<option value="">Select Candidate</option>';
+
+                if (candidates.length === 0) {
+                    list.innerHTML = '<li>No candidates added yet.</li>';
+                }
+
+                candidates.forEach(candidate => {
+                    list.innerHTML += `<li>ID: ${candidate.CandidateID}, Name: ${candidate.Name}, Party: ${candidate.Party}, Election ID: ${candidate.ElectionID}</li>`;
+                    // Only add to vote form if it matches the filtered election or no filter is applied
+                    if (!filterElectionId || candidate.ElectionID == filterElectionId) {
+                        // CORRECTED LINE: Removed span and math-inline
+                        voteCandidateSelect.innerHTML += `<option value="${candidate.CandidateID}">${candidate.Name} (${candidate.Party}) - Election ID: ${candidate.ElectionID}</option>`;
+                    }
+                });
+            } catch (error) {
+                displayMessage('candidateMessage', `Error loading candidates: ${error.message}`, true);
+            }
+        }
+
+        async function loadPollingStations() {
+            try {
+                const pollingStations = await fetchData(`${API_BASE_URL}/pollingstations`);
+                const list = document.getElementById('pollingStationsList');
+                list.innerHTML = '';
+                const votePollingStationSelect = document.getElementById('votePollingStation');
+                votePollingStationSelect.innerHTML = '<option value="">Select Polling Station</option>';
+
+                if (pollingStations.length === 0) {
+                    list.innerHTML = '<li>No polling stations added yet.</li>';
+                }
+                pollingStations.forEach(station => {
+                    list.innerHTML += `<li>ID: ${station.PollingStationID}, Location: ${station.Location}</li>`;
+                    // CORRECTED LINE: Removed span and math-inline
+                    votePollingStationSelect.innerHTML += `<option value="${station.PollingStationID}">${station.Location}</option>`;
+                });
+            } catch (error) {
+                displayMessage('pollingStationMessage', `Error loading polling stations: ${error.message}`, true);
+            }
+        }
+
+        async function loadVotes() {
+            try {
+                const votes = await fetchData(`${API_BASE_URL}/votes`);
+                const list = document.getElementById('votesList');
+                list.innerHTML = '';
+                if (votes.length === 0) {
+                    list.innerHTML = '<li>No votes cast yet.</li>';
+                }
+                votes.forEach(vote => {
+                    list.innerHTML += `<li>Vote ID: ${vote.VoteID}, Voter ID: ${vote.VoterID}, Candidate ID: ${vote.CandidateID}, Election ID: ${vote.ElectionID}, Polling Station ID: ${vote.PollingStationID}</li>`;
+                });
+            } catch (error) {
+                displayMessage('voteMessage', `Error loading votes: ${error.message}`, true);
+            }
+        }
+
+
+        // --- Event Listeners ---
+        document.getElementById('registerVoterForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+            try {
+                await postData(`${API_BASE_URL}/voters`, { Name: document.getElementById('voterName').value });
+                displayMessage('voterMessage', 'Voter registered successfully!', false);
+                document.getElementById('voterName').value = ''; // Clear input field
+                loadVoters(); // Reload the list of voters
+            } catch (error) {
+                displayMessage('voterMessage', `Error registering voter: ${error.message}`, true);
+            }
+        });
+
+        document.getElementById('addElectionForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            try {
+                await postData(`${API_BASE_URL}/elections`, { ElectionType: document.getElementById('electionType').value });
+                displayMessage('electionMessage', 'Election added successfully!', false);
+                document.getElementById('electionType').value = '';
+                loadElections();
+            } catch (error) {
+                displayMessage('electionMessage', `Error adding election: ${error.message}`, true);
+            }
+        });
+
+        document.getElementById('addCandidateForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const electionId = document.getElementById('candidateElection').value;
+            if (!electionId) {
+                displayMessage('candidateMessage', 'Please select an election.', true);
+                return;
+            }
+            try {
+                await postData(`${API_BASE_URL}/candidates`, {
+                    Name: document.getElementById('candidateName').value,
+                    Party: document.getElementById('candidateParty').value,
+                    ElectionID: parseInt(electionId)
+                });
+                displayMessage('candidateMessage', 'Candidate added successfully!', false);
+                document.getElementById('candidateName').value = '';
+                document.getElementById('candidateParty').value = '';
+                document.getElementById('candidateElection').value = ''; // Clear selected election
+                loadCandidates(); // Reload candidates list
+            } catch (error) {
+                displayMessage('candidateMessage', `Error adding candidate: ${error.message}`, true);
+            }
+        });
+
+        document.getElementById('addPollingStationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            try {
+                await postData(`${API_BASE_URL}/pollingstations`, { Location: document.getElementById('pollingStationLocation').value });
+                displayMessage('pollingStationMessage', 'Polling Station added successfully!', false);
+                document.getElementById('pollingStationLocation').value = '';
+                loadPollingStations();
+            } catch (error) {
+                displayMessage('pollingStationMessage', `Error adding polling station: ${error.message}`, true);
+            }
+        });
+
+        document.getElementById('castVoteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const voterId = document.getElementById('voteVoter').value;
+            const electionId = document.getElementById('voteElection').value;
+            const candidateId = document.getElementById('voteCandidate').value;
+            const pollingStationId = document.getElementById('votePollingStation').value;
+
+            if (!voterId || !electionId || !candidateId || !pollingStationId) {
+                displayMessage('voteMessage', 'Please fill all vote details.', true);
+                return;
+            }
+
+            try {
+                // First, check if the voter has already voted in this election
+                const voteStatus = await fetchData(`${API_BASE_URL}/elections/${electionId}/voters/${voterId}/has-voted`);
+                if (voteStatus.has_voted) {
+                    displayMessage('voteMessage', 'You have already voted in this election.', true);
+                    return;
+                }
+
+                // If not, proceed to cast the vote
+                await postData(`${API_BASE_URL}/votes`, {
+                    VoterID: parseInt(voterId),
+                    CandidateID: parseInt(candidateId),
+                    ElectionID: parseInt(electionId),
+                    PollingStationID: parseInt(pollingStationId)
+                });
+                displayMessage('voteMessage', 'Vote cast successfully!', false);
+                // Clear form fields
+                document.getElementById('voteVoter').value = '';
+                document.getElementById('voteElection').value = '';
+                document.getElementById('voteCandidate').value = '';
+                document.getElementById('votePollingStation').value = '';
+                loadVotes(); // Reload the votes list
+            } catch (error) {
+                displayMessage('voteMessage', `Error casting vote: ${error.message}`, true);
+            }
+        });
+
+        // Event listener to filter candidates in the vote form based on selected election
+        document.getElementById('voteElection').addEventListener('change', async (e) => {
+            const selectedElectionId = e.target.value;
+            const voteCandidateSelect = document.getElementById('voteCandidate');
+            voteCandidateSelect.innerHTML = '<option value="">Select Candidate</option>'; // Reset candidates
+
+            if (selectedElectionId) {
+                try {
+                    const candidates = await fetchData(`${API_BASE_URL}/candidates`); // Fetch all candidates
+                    candidates.forEach(candidate => {
+                        if (candidate.ElectionID == selectedElectionId) { // Filter by selected election
+                            // CORRECTED LINE: Removed span and math-inline
+                            voteCandidateSelect.innerHTML += `<option value="${candidate.CandidateID}">${candidate.Name} (${candidate.Party})</option>`;
+                        }
+                    });
+                } catch (error) {
+                    displayMessage('voteMessage', `Error loading candidates for election: ${error.message}`, true);
+                }
+            }
+        });
+
+        document.getElementById('getResultsButton').addEventListener('click', async () => {
+            const electionId = document.getElementById('resultsElection').value;
+            const resultsList = document.getElementById('electionResultsList');
+            resultsList.innerHTML = ''; // Clear previous results
+
+            if (!electionId) {
+                displayMessage('resultsMessage', 'Please select an election to view results.', true);
+                return;
+            }
+            try {
+                // CORRECTED LINE: Removed span and math-inline
+                const results = await fetchData(`${API_BASE_URL}/elections/${electionId}/candidate-votes`);
+                if (results.length === 0) {
+                    resultsList.innerHTML = '<li>No votes recorded for this election yet or no candidates found.</li>';
+                } else {
+                    results.forEach(result => {
+                        // CORRECTED LINE: Removed span and math-inline
+                        resultsList.innerHTML += `<li>Candidate: ${result.Name} (${result.Party}), Votes: ${result.VoteCount}</li>`;
+                    });
+                }
+                displayMessage('resultsMessage', 'Results loaded successfully!', false);
+            } catch (error) {
+                displayMessage('resultsMessage', `Error fetching results: ${error.message}`, true);
+            }
+        });
+
+        // Initial data load on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadVoters();
+            loadElections();
+            loadCandidates(); // Load all candidates initially
+            loadPollingStations();
+            loadVotes();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/musa/Desktop/6Th_Semester/DSD/DSD_Practice/FA/FA_TB_isim_beh.exe" -prj "C:/Users/musa/Desktop/6Th_Semester/DSD/DSD_Practice/FA/FA_TB_beh.prj" "work.FA_TB" "work.glbl" 

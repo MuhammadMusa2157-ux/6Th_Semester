@@ -1,0 +1,57 @@
+D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_2x4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Decoder_2x4
+
+Top level modules:
+	Decoder_2x4
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_4x16_using_3x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Decoder_4x16_using_3x8
+
+Top level modules:
+	Decoder_4x16_using_3x8
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Decoder_3x8
+
+Top level modules:
+	test_Decoder_3x8
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Decoder_3x8
+
+Top level modules:
+	Decoder_3x8
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_3x8_using_2x4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Decoder_3x8_using_2x4
+
+Top level modules:
+	test_Decoder_3x8_using_2x4
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/Decoder_3x8_using_2x4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Decoder_3x8_using_2x4
+
+Top level modules:
+	Decoder_3x8_using_2x4
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_2x4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test1_Decoder_2x4
+
+Top level modules:
+	test1_Decoder_2x4
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders/test_Decoder_4x16_using_3x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Decoder_4x16_using_3x8
+
+Top level modules:
+	test_Decoder_4x16_using_3x8
+
+} {} {}}

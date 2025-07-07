@@ -1,0 +1,18 @@
+NET "clk"                  LOC = V10     | IOSTANDARD = LVCMOS33 | PERIOD = 100MHz ;
+NET "reset"                LOC = M18     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW1
+
+NET "segments[7]"            LOC = A3      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #a
+NET "segments[6]"            LOC = B4      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #b
+NET "segments[5]"            LOC = A4      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #c
+NET "segments[4]"            LOC = C4      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #d
+NET "segments[3]"            LOC = C5      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #e
+NET "segments[2]"            LOC = D6      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #f
+NET "segments[1]"            LOC = C6      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #g
+NET "segments[0]"            LOC = A5      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   #dot
+
+#Enables for Seven Segment    
+NET "enables[2]"      LOC = B3      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   
+NET "enables[1]"      LOC = A2      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;   
+NET "enables[0]"      LOC = B2      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+
+

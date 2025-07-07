@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="1689" delta="old" >"C:\Users\musa\Desktop\6Th_Semester\DSD\practice\FA_Adder\FA_Adder_TB.v" Line 17: System task finish is always executed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\musa\Desktop\6Th_Semester\DSD\practice\FA_Adder\FA_Adder_TB.v" Line 8: Using initial value of <arg fmt="%s" index="1">A</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\musa\Desktop\6Th_Semester\DSD\practice\FA_Adder\FA_Adder_TB.v" Line 1: Empty module &lt;<arg fmt="%s" index="1">FA_TB</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

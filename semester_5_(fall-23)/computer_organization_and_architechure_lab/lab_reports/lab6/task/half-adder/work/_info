@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/aimal/OneDrive/Desktop
+vFourBitAdder
+Z0 !s110 1699637380
+!i10b 1
+!s100 zLMoLden1;[Zed8zcXnX20
+IcGzA8JkO^NFQn8UZ?2C]]1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder
+w1699635474
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FourBitAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FourBitAdder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1699637380.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FourBitAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FourBitAdder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@four@bit@adder
+vFullAdder
+R0
+!i10b 1
+!s100 ^<NU;R<H75H]JQYazRKCP0
+IYI6`PnOaCf@E0AkRiR4U32
+R1
+R2
+w1699634090
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FullAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FullAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/FullAdder.v|
+!i113 1
+R5
+R6
+n@full@adder
+vHalfAdder
+Z7 !s110 1699637379
+!i10b 1
+!s100 =f_8XATYod7O;;ESU:QEC1
+IH0^S;lSL>;RLaP2XzACK:0
+R1
+R2
+w1699248157
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/HalfAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/HalfAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1699637379.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/HalfAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/HalfAdder.v|
+!i113 1
+R5
+R6
+n@half@adder
+vsimulateFourBitAdder
+!s110 1699638195
+!i10b 1
+!s100 H>MPZ`0boG>TfTe;cJ2Em3
+I:e6eQP[z5]eM2k>XYO2L12
+R1
+R2
+w1699638176
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FourBitAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FourBitAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1699638195.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FourBitAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FourBitAdder.v|
+!i113 1
+R5
+R6
+nsimulate@four@bit@adder
+vsimulateFullAdder
+R0
+!i10b 1
+!s100 <7eaRP1EOAJmn@PhLNCb>2
+I`aPH7^ZkZD0T`O=N5=iie2
+R1
+R2
+w1699250274
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FullAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FullAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_FullAdder.v|
+!i113 1
+R5
+R6
+nsimulate@full@adder
+vsimulateHalfAdder
+R7
+!i10b 1
+!s100 9=JUff2@KCUCC=m3<LbNz3
+Ib[?M[OGCU;W42<zcAZ0O@0
+R1
+R2
+w1699634045
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_HalfAdder.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_HalfAdder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_HalfAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab6/task/half-adder/test_HalfAdder.v|
+!i113 1
+R5
+R6
+nsimulate@half@adder

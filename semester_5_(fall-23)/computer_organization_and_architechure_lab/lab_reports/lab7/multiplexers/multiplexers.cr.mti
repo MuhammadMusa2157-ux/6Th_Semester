@@ -1,0 +1,57 @@
+D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_2x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Mux_2x1
+
+Top level modules:
+	test_Mux_2x1
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Custom_Mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Custom_Mux
+
+Top level modules:
+	test_Custom_Mux
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_2x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_2x1
+
+Top level modules:
+	Mux_2x1
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Custom_Mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Custom_Mux
+
+Top level modules:
+	Custom_Mux
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1_using_2x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Mux_4to1_using_Mux2x1
+
+Top level modules:
+	test_Mux_4to1_using_Mux2x1
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/test_Mux_4x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_Mux_4x1
+
+Top level modules:
+	test_Mux_4x1
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1_using_2x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_4to1_using_Mux2x1
+
+Top level modules:
+	Mux_4to1_using_Mux2x1
+
+} {} {}} D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v {1 {vlog -work work -stats=none D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab7/muxes/Mux_4x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_4x1
+
+Top level modules:
+	Mux_4x1
+
+} {} {}}

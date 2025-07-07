@@ -1,0 +1,23 @@
+
+{
+  "name": "voting-system-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the Voting and Election Management System",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "npx serve public",
+    "test": "echo \"No frontend tests specified\" && exit 0"
+  },
+  "keywords": [
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "tailwind"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

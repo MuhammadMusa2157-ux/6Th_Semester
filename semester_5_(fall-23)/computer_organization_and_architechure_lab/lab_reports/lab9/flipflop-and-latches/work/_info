@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab8/decoders
+vJK_Flipflop
+Z0 !s110 1702875452
+!i10b 1
+!s100 9GXndT;aNF3fV6m;VPH:G0
+IJ=Q1IAgNzYz58_f__ozZT2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches
+w1702875091
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/JK_Flipflop.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/JK_Flipflop.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1702875452.000000
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/JK_Flipflop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/JK_Flipflop.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@j@k_@flipflop
+vtest_JK_Flipflop
+R0
+!i10b 1
+!s100 NXo[1P?>F2QVKYIm^RG?>0
+I7KjPQK[_T;LV<5TkFI`ZP0
+R1
+R2
+w1702875106
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_JK_Flipflop.v|
+!i113 1
+R5
+R6
+ntest_@j@k_@flipflop
+vtest_SR_Flipflop
+R0
+!i10b 1
+!s100 A9i_f>6Wa=zYh_dN8zO=n2
+IfH:lQYcYNlcjC`l3O4Lf`3
+R1
+R2
+w1702874829
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Flipflop.v|
+!i113 1
+R5
+R6
+ntest_@s@r_@flipflop
+vtest_SR_Latch
+R0
+!i10b 1
+!s100 QJ2hg<_ok;DNc_G6_H6gN3
+IV]SA@]8D07@JOUPOK1ZK?3
+R1
+R2
+w1702873112
+8D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v
+FD:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/programing/my_github_account/DCSE/semester_5_(fall-23)/computer_organization_and_architechure_lab/lab_reports/lab9/flipflop-and-latches/test_SR_Latch.v|
+!i113 1
+R5
+R6
+ntest_@s@r_@latch
