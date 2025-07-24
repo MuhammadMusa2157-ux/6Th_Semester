@@ -1,6 +1,6 @@
 # 📚 6th Semester - Computer Systems Engineering
 
-This repository contains all the study material, assignments, and lab work for my 6th semester in the Computer Science program.
+This repository contains all the study material, assignments, and lab work for my 6th semester in the Computer Systems Engineering.
 
 ---
 
